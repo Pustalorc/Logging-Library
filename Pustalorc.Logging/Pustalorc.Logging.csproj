@@ -3,22 +3,39 @@
         <TargetFrameworks>net481;net6.0;net7.0;net8.0;netstandard2.0;netstandard2.1</TargetFrameworks>
         <LangVersion>12</LangVersion>
         <Nullable>enable</Nullable>
+
         <RootNamespace>Pustalorc.Libraries.Logging</RootNamespace>
         <AssemblyTitle>Pustalorc.Logging</AssemblyTitle>
         <AssemblyName>Pustalorc.Logging</AssemblyName>
         <Product>Pustalorc.Logging</Product>
+
         <Company>Pustalorc</Company>
         <Copyright>Copyright © Pustalorc 2024</Copyright>
+
         <AssemblyVersion>1.0.0</AssemblyVersion>
+        <PackageVersion>1.0.0</PackageVersion>
         <FileVersion>1.0.0</FileVersion>
+        <Version>1.0.0</Version>
+
         <OutputPath>bin\$(Configuration)\</OutputPath>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageId>Pustalorc.Logging</PackageId>
+
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <Copyright>Copyright © 2024 Pustalorc</Copyright>
+        <Authors>Pustalorc</Authors>
+
+        <Description>Primary implementation of the Logger with its API.</Description>
+        <PackageReleaseNotes>Initial Release</PackageReleaseNotes>
+
+        <RepositoryUrl>https://github.com/Pustalorc/Logging-Library</RepositoryUrl>
+        <RepositoryType>Github</RepositoryType>
     </PropertyGroup>
 
     <ItemGroup>
         <PackageReference Include="JetBrains.Annotations" Version="2023.3.0"/>
-    </ItemGroup>
-
-    <ItemGroup>
-        <ProjectReference Include="..\Pustalorc.Logging.API\Pustalorc.Logging.API.csproj"/>
+        <PackageReference Include="Pustalorc.Logging.API" Version="1.0.0" />
     </ItemGroup>
 </Project>

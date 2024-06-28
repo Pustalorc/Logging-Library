@@ -27,11 +27,10 @@
         <Copyright>Copyright © 2024 Pustalorc</Copyright>
         <Authors>Pustalorc</Authors>
 
-        <PackageTags></PackageTags>
-        <Description></Description>
-        <PackageReleaseNotes></PackageReleaseNotes>
+        <Description>Library for the API for the Logger.</Description>
+        <PackageReleaseNotes>Initial Release</PackageReleaseNotes>
 
-        <RepositoryUrl>https://github.com/Pustalorc/</RepositoryUrl>
+        <RepositoryUrl>https://github.com/Pustalorc/Logging-Library</RepositoryUrl>
         <RepositoryType>Github</RepositoryType>
     </PropertyGroup>
 
