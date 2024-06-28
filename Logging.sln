@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pustalorc.Logging.API", "Pustalorc.Logging.API\Pustalorc.Logging.API.csproj", "{5AD59AA6-3E11-48AE-B578-A44893A76E82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pustalorc.Logging", "Pustalorc.Logging\Pustalorc.Logging.csproj", "{6B1C260F-A687-4843-A16C-876409B64281}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5AD59AA6-3E11-48AE-B578-A44893A76E82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AD59AA6-3E11-48AE-B578-A44893A76E82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AD59AA6-3E11-48AE-B578-A44893A76E82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AD59AA6-3E11-48AE-B578-A44893A76E82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B1C260F-A687-4843-A16C-876409B64281}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B1C260F-A687-4843-A16C-876409B64281}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B1C260F-A687-4843-A16C-876409B64281}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B1C260F-A687-4843-A16C-876409B64281}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
