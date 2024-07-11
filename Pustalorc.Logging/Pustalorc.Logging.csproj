@@ -35,7 +35,10 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="JetBrains.Annotations" Version="2023.3.0"/>
-        <PackageReference Include="Pustalorc.Logging.API" Version="1.0.0" />
+        <PackageReference Include="JetBrains.Annotations" Version="2024.2.0" PrivateAssets="all"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Pustalorc.Logging.API\Pustalorc.Logging.API.csproj"/>
     </ItemGroup>
 </Project>

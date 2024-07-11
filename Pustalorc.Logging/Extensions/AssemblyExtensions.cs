@@ -5,15 +5,45 @@ using JetBrains.Annotations;
 
 namespace Pustalorc.Libraries.Logging.Extensions;
 
+/// <summary>
+///     Basic extensions for the Assembly type, to get necessary values.
+/// </summary>
 [PublicAPI]
 public static class AssemblyExtensions
 {
+    /// <summary>
+    ///     Gets the assembly's identity (name + version).
+    /// </summary>
+    /// <param name="assembly">The assembly.</param>
+    /// <returns>A string in the format NAME vVERSION</returns>
     public static string GetAssemblyIdentity(this Assembly assembly)
     {
-        var name = assembly.GetName();
-        var fullName = name.Name;
+        var name = assembly.GetAssemblyName();
+        var version = assembly.GetAssemblyVersion();
+
+        return $"{name} v{version}";
+    }
+
+    /// <summary>
+    ///     Gets the assembly's name
+    /// </summary>
+    /// <param name="assembly">The assembly.</param>
+    /// <returns>The AssemblyName, or UNKNOWN if null.</returns>
+    public static string GetAssemblyName(this Assembly assembly)
+    {
+        return assembly.GetName().Name ?? "UNKNOWN";
+    }
+
+    /// <summary>
+    ///     Gets the assembly's version
+    /// </summary>
+    /// <param name="assembly">The assembly.</param>
+    /// <returns>The FileVersion, or AssemblyVersion, or UNKNOWN if null.</returns>
+    public static string GetAssemblyVersion(this Assembly assembly)
+    {
         var location = assembly.Location;
-        var version = name.Version.ToString();
+        var name = assembly.GetName();
+        var version = name.Version?.ToString();
 
         if (!string.IsNullOrWhiteSpace(location))
         {
@@ -30,6 +60,6 @@ public static class AssemblyExtensions
                 version = reflectedVersion;
         }
 
-        return $"{fullName} v{version}";
+        return version ?? "UNKNOWN";
     }
 }
