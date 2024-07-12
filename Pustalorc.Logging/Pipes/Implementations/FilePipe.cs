@@ -10,7 +10,8 @@ namespace Pustalorc.Libraries.Logging.Pipes.Implementations;
 
 /// <inheritdoc />
 /// <summary>
-///     An implementation of <see cref="T:Pustalorc.Libraries.Logging.Pipes.Abstractions.BasePipe" /> that outputs to a file as per its configuration file
+///     An implementation of <see cref="T:Pustalorc.Libraries.Logging.Pipes.Abstractions.BasePipe" /> that outputs to a
+///     file as per its configuration file
 ///     <see cref="T:Pustalorc.Libraries.Logging.API.Pipes.Configuration.IFilePipeConfiguration" />.
 /// </summary>
 /// <param name="owningAssembly">The assembly that owns this pipe. Used to generate the file name.</param>

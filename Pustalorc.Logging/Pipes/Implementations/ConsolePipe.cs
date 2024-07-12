@@ -7,7 +7,8 @@ namespace Pustalorc.Libraries.Logging.Pipes.Implementations;
 
 /// <inheritdoc />
 /// <summary>
-///     An implementation of <see cref="T:Pustalorc.Libraries.Logging.Pipes.Abstractions.BasePipe" /> that outputs directly to the console.
+///     An implementation of <see cref="T:Pustalorc.Libraries.Logging.Pipes.Abstractions.BasePipe" /> that outputs directly
+///     to the console.
 /// </summary>
 /// <param name="configuration">The configuration for this pipe.</param>
 [PublicAPI]

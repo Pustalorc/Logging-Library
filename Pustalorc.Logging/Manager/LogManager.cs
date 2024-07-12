@@ -2,8 +2,8 @@ using System.Reflection;
 using JetBrains.Annotations;
 using Pustalorc.Libraries.Logging.API.Loggers;
 using Pustalorc.Libraries.Logging.API.Loggers.Configuration;
+using Pustalorc.Libraries.Logging.API.LogLevels;
 using Pustalorc.Libraries.Logging.API.Manager;
-using Pustalorc.Libraries.Logging.LogLevels;
 
 namespace Pustalorc.Libraries.Logging.Manager;
 
@@ -126,7 +126,7 @@ public static class LogManager
     /// </summary>
     /// <param name="message">The message to write to the logger for the calling Assembly.</param>
     /// <param name="level">The log level for this message.</param>
-    public static void Write(object message, LogLevel level)
+    public static void Write(object message, ILogLevel level)
     {
         LoggerManager.GetLogger(Assembly.GetCallingAssembly()).Write(message, level);
     }

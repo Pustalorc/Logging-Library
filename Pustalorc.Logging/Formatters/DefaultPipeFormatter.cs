@@ -54,7 +54,7 @@ public class DefaultPipeFormatter : IPipeFormatter
     }
 
     /// <summary>
-    /// Replaces {date} in the format with the date.
+    ///     Replaces {date} in the format with the date.
     /// </summary>
     /// <param name="format">The string which we want to replace {date} from it.</param>
     /// <param name="now">The current UTC DateTime</param>
@@ -65,7 +65,7 @@ public class DefaultPipeFormatter : IPipeFormatter
     }
 
     /// <summary>
-    /// Replaces {time} in the format with the time.
+    ///     Replaces {time} in the format with the time.
     /// </summary>
     /// <param name="format">The string which we want to replace {time} from it.</param>
     /// <param name="now">The current UTC DateTime</param>
@@ -76,14 +76,14 @@ public class DefaultPipeFormatter : IPipeFormatter
     }
 
     /// <summary>
-    /// Replaces {logLevel} and its modifiers in the format with the log level.
+    ///     Replaces {logLevel} and its modifiers in the format with the log level.
     /// </summary>
     /// <param name="format">The string which we want to replace {logLevel} and its modifiers from it.</param>
     /// <param name="colorAdditionFormat">The format for handling colors.</param>
     /// <param name="logLevel">The log level</param>
     /// <returns>format but with {logLevel} and its modifiers replaced.</returns>
     /// <remarks>
-    /// Supports the following format modifiers:
+    ///     Supports the following format modifiers:
     ///     - {logLevel:short} - For the log level with its short form name
     ///     - {logLevel:full} - For the log level with its full name
     ///     - {logLevel:level} - For the numerical representation of the log level
@@ -98,13 +98,13 @@ public class DefaultPipeFormatter : IPipeFormatter
     }
 
     /// <summary>
-    /// Replaces {assembly} and its modifiers in the format with the assembly's identity.
+    ///     Replaces {assembly} and its modifiers in the format with the assembly's identity.
     /// </summary>
     /// <param name="format">The string which we want to replace {assembly} and its modifiers from it.</param>
     /// <param name="assembly">The assembly.</param>
     /// <returns>format but with {assembly} and its modifiers replaced.</returns>
     /// <remarks>
-    /// Supports the following format modifiers:
+    ///     Supports the following format modifiers:
     ///     - {assembly:name} - For the assembly's name.
     ///     - {assembly:version} - For the assembly's version.
     ///     - {assembly} - For the assembly's identity (name + version)
@@ -117,7 +117,7 @@ public class DefaultPipeFormatter : IPipeFormatter
     }
 
     /// <summary>
-    /// Replaces {message} in the format with the message.
+    ///     Replaces {message} in the format with the message.
     /// </summary>
     /// <param name="format">The string which we want to replace {message} from it.</param>
     /// <param name="colorAdditionFormat">The format for handling colors.</param>
