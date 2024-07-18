@@ -38,7 +38,7 @@ public abstract class BasePipe(IPipeConfiguration config) : IPipe
     protected virtual IPipeFormatter Formatter { get; set; } = new DefaultPipeFormatter();
 
     /// <inheritdoc />
-    public void UpdateConfiguration(IPipeConfiguration configuration)
+    public virtual void UpdateConfiguration(IPipeConfiguration configuration)
     {
         Configuration = configuration;
     }

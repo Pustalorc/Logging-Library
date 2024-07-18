@@ -31,6 +31,6 @@ public class ConsolePipe(IPipeConfiguration configuration) : BasePipe(configurat
             else
                 Console.Write(piece);
         Console.ResetColor();
-        Console.Write('\n');
+        Console.Write(Environment.NewLine);
     }
 }
