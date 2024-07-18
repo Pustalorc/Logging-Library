@@ -13,9 +13,9 @@
         <Copyright>Copyright © Pustalorc 2024</Copyright>
 
         <AssemblyVersion>1.0.0</AssemblyVersion>
-        <PackageVersion>1.0.2</PackageVersion>
-        <FileVersion>1.0.2</FileVersion>
-        <Version>1.0.2</Version>
+        <PackageVersion>1.0.3</PackageVersion>
+        <FileVersion>1.0.3</FileVersion>
+        <Version>1.0.3</Version>
 
         <OutputPath>bin\$(Configuration)\</OutputPath>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
@@ -28,7 +28,7 @@
         <Authors>Pustalorc</Authors>
 
         <Description>Primary implementation of the Logger with its API.</Description>
-        <PackageReleaseNotes>Fixed a set of issues with FilePipe and ConsolePipe</PackageReleaseNotes>
+        <PackageReleaseNotes>Fixed an issue with FilePipe not adding a new line at end of lines.</PackageReleaseNotes>
 
         <RepositoryUrl>https://github.com/Pustalorc/Logging-Library</RepositoryUrl>
         <RepositoryType>Github</RepositoryType>

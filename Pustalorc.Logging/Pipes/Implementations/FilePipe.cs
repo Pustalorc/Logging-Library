@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 using System.Reflection;
 using JetBrains.Annotations;
@@ -75,6 +76,6 @@ public class FilePipe : BasePipe
         if (path != null && !Directory.Exists(path))
             Directory.CreateDirectory(path);
 
-        File.AppendAllText(FileName, formattedMessage);
+        File.AppendAllText(FileName, $"{formattedMessage}{Environment.NewLine}");
     }
 }
