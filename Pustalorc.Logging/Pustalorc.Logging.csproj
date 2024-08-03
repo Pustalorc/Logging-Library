@@ -13,9 +13,9 @@
         <Copyright>Copyright © Pustalorc 2024</Copyright>
 
         <AssemblyVersion>1.0.0</AssemblyVersion>
-        <PackageVersion>1.0.3</PackageVersion>
-        <FileVersion>1.0.3</FileVersion>
-        <Version>1.0.3</Version>
+        <PackageVersion>1.0.4</PackageVersion>
+        <FileVersion>1.0.4</FileVersion>
+        <Version>1.0.4</Version>
 
         <OutputPath>bin\$(Configuration)\</OutputPath>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
@@ -28,7 +28,7 @@
         <Authors>Pustalorc</Authors>
 
         <Description>Primary implementation of the Logger with its API.</Description>
-        <PackageReleaseNotes>Fixed an issue with FilePipe not adding a new line at end of lines.</PackageReleaseNotes>
+        <PackageReleaseNotes>Fixed an issue where by default mono in unity will split the log file by the `:` instead of only the path separators.</PackageReleaseNotes>
 
         <RepositoryUrl>https://github.com/Pustalorc/Logging-Library</RepositoryUrl>
         <RepositoryType>Github</RepositoryType>

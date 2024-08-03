@@ -61,7 +61,7 @@ public class FileNamePipeFormatter : IPipeFormatter
     /// <returns>format but with {date} replaced.</returns>
     protected virtual string FormatDate(string format, DateTime now)
     {
-        return format.Replace("{date}", now.ToString("yyyy_MM_dd", CultureInfo.InvariantCulture));
+        return format.Replace("{date}", now.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture));
     }
 
     /// <summary>
@@ -72,7 +72,7 @@ public class FileNamePipeFormatter : IPipeFormatter
     /// <returns>format but with {time} replaced.</returns>
     protected virtual string FormatTime(string format, TimeSpan now)
     {
-        return format.Replace("{time}", now.ToString(@"hh\:mm\:ss", CultureInfo.InvariantCulture));
+        return format.Replace("{time}", now.ToString(@"hh\-mm\-ss", CultureInfo.InvariantCulture));
     }
 
     /// <summary>
